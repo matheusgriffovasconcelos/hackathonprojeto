@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-reprogramese{
+    background: url("img/bg-foguete.jpg");
+    background-size: cover;
+}
+
+.relogio {
+    height: 150px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div {
+    height: 50%;
+    color: #fff;
+    width: 25%;
+    margin: 5px;
+    background: rgba(73, 0, 73, 0.9);
+    
+    /* background: linear-gradient(200deg, #454747, #2e6ed6, #38022b); */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 100%;
+    
+}
+
+.relogio span.tempo {
+    font-size: 70%;
+}
+
+.titulo-relogio {
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.gradient {
+    background-image: linear-gradient(to bottom,  #1A7FBE, #5B7FB9, #C27FB1);
+    
+    background-clip: text;
+    -webkit-background-clip: text; 
+
+    -webkit-text-fill-color: transparent;
+
+    color: black;
+    
+  }
