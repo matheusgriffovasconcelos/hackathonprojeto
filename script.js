@@ -31,3 +31,43 @@ const relogio = setInterval(function time() {
         clearInterval(relogio);
     }
 }, 1000);
+
+
+
+// Selecionar os elementos da barra de acessibilidade
+const accessibilityBar = document.querySelector('.accessibility-bar');
+const increaseFontSizeButton = document.querySelector('#increase-font-size');
+const decreaseFontSizeButton = document.querySelector('#decrease-font-size');
+const highContrastModeButton = document.querySelector('#high-contrast-mode');
+
+// Verificar se as preferências do usuário já estão armazenadas no LocalStorage
+if (localStorage.getItem('highContrastMode')) {
+  document.documentElement.classList.add('high-contrast');
+  highContrastModeButton.textContent = 'Desativar alto contraste';
+}
+
+if (localStorage.getItem('largeFont')) {
+  document.documentElement.classList.add('large-font');
+}
+
+// Adicionar eventos aos botões
+increaseFontSizeButton.addEventListener('click', () => {
+    document.documentElement.classList.toggle('large-font');
+    localStorage.setItem('largeFont', document.documentElement.classList.contains('large-font'));
+  });
+  
+  decreaseFontSizeButton.addEventListener('click', () => {
+    document.documentElement.classList.remove('large-font');
+    localStorage.removeItem('largeFont');
+  });
+  
+highContrastModeButton.addEventListener('click', () => {
+  document.body.classList.toggle('high-contrast');
+  if (document.body.classList.contains('high-contrast')) {
+    highContrastModeButton.textContent = 'Desativar alto contraste';
+    localStorage.setItem('highContrastMode', true);
+  } else {
+    highContrastModeButton.textContent = 'Ativar alto contraste';
+    localStorage.removeItem('highContrastMode');
+  }
+});

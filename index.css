@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+
 }
 
 body::after {
@@ -19,24 +20,30 @@ body::after {
 a {
     text-decoration: none;
     font-size: 1.2rem;
-    /* letter-spacing: 0.1rem; */
+    letter-spacing: 0.1rem;
     display: inline-block;
     color: #6e8ce6;
 }
 
-.logotipo {
+.logotipo img{
     font-size: 2rem;
     color: #6e8ce6;
+    width: 150px;
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
     color: #555;
 }
 
 h1 {
-    font-size: 4rem;    
+    font-size: 4rem;
 }
 
 h2 {
@@ -75,12 +82,12 @@ p {
     border-radius: 1.5rem;
     color: #6E8CE6;
     font-size: .8rem;
-    letter-spacing: .15rem;    
+    letter-spacing: .15rem;
     text-transform: uppercase;
     display: flex;
     align-self: center;
     padding: .75rem 1.5rem;
-    transition: border-color 500ms;    
+    transition: border-color 500ms;
 }
 
 .btn-contorno:hover {
@@ -94,7 +101,7 @@ p {
     background-color: #4358b3;
     color: #fff;
     font-size: 1rem;
-    letter-spacing: .15rem;    
+    letter-spacing: .15rem;
     text-transform: uppercase;
     padding: 1.2rem 1.5rem;
     display: inline-block;
@@ -151,7 +158,8 @@ ul li::before {
     background-color: rgba(245, 246, 250, .4);
 }
 
-input, textarea {
+input,
+textarea {
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
     padding: 1rem;
@@ -171,3 +179,68 @@ footer {
     padding: 4rem;
     border-top: solid 1px #dde;
 }
+
+
+
+.accessibility-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.accessibility-bar button {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+.large-font {
+    font-size: 30px !important;
+}
+
+
+
+/* Estilizando o CARROUSEL */
+
+.carousel-item {
+    height: 300px;
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .carousel-caption h5 {
+    color: #fff;
+  }
+  
+  .carousel-caption p {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-caption {
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  

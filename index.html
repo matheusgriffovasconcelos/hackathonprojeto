@@ -16,58 +16,125 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
-    <title>Portfolio de Georgio Ferri Jr.</title>
+    <title>Reprograme-se</title>
 </head>
 
+
 <body>
-    <div class="">
-        <header class="mb-30 container">
-            <i class="bi-person-lines-fill logotipo"></i>
-            <a href="#preco" class="btn-contorno">Preços</a>
-        </header>
 
-        <main class="ta-center mb-30">
-            <div class="frases">
-                <h6 class="mb-20">Projeto REPROGRAME-SE</h6>
-                <h1 class="mb-20 gradient">CAPACITAÇÃO EM PROGRAMAÇÃO
-                    e desenvolvimento de websites</h1>
-                <p class="mb-20">APRENDA A PROGRAMAR DE FORMA TOTALMENTE GRATUITA EM UM AMBIENTE EAD INTERATIVO.</p>
-                <p class="h3 text-info">CHEGOU A HORA
-                    DE REPROGRAMAR O SEU FUTURO!</p>
-                <div class="container-fluid bg-dark mt-3 p-3 bg-reprogramese" data-aos="fade-up">
-                    <div class="col-lg-6 col-sm-12 mx-auto">
-                        <div class="row">
-                            <span id="proximaturma" value="2023-09-15T10:00:00"></span>
-                            <div class="relogio d-flex align-items-center row">
-                                <p class="row text-center mb-0 mt-1 titulo-relogio text-uppercase mx-auto">Tempo restante para abertura de nova turma: </p>
-                                <div class="col d-grid align-items-center">
-                                    <span id="dias">0</span>
-                                    <span class="tempo">Dias</span>
-                                </div>
+    <header class="mb-30 container d-flex mx-auto">
+        <i class="logotipo img-fluid"><img src="/img/logo-ifes/ifes-horizontal-cor.png" alt=""></i>
+        <i class="logotipo img-fluid"><img src="/img/logo-reprogramese/preferencial-horizontal.png" alt=""></i>
+        <i class="logotipo img-fluid"><img src="/img/logo-action/horizontal-cor.png" alt=""></i>
+    </header>
 
-                                <div class="col d-grid align-items-center">
-                                    <span id="horas">00</span>
-                                    <span class="tempo">Horas</span>
-                                </div>
+    <div class="col-1 d-flex align-content-end sticky-top">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle-split" type="button" id="accessibility-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/img/libras.png" alt="" width="50px">
+            </button>
+            <div class="dropdown-menu p-3" aria-labelledby="accessibility-dropdown">
+                <button id="increase-font-size" class="btn btn-lg btn-primary mb-1"><span class="bi bi-plus-circle">Aumentar Letras</span></button>
+                <button id="decrease-font-size" class="btn btn-lg btn-primary mb-1"><span class="bi bi-dash-circle">Diminuir Letras</span></button>
+                <button id="high-contrast-mode" class=" btn btn-lg btn-dark"><span class="bi bi-palette-fill">Alto Contraste</span></button>
+            </div>
+        </div>
+    </div>
 
-                                <div class="col d-grid align-items-center">
-                                    <span id="minutos">00</span>
-                                    <span class="tempo">Minutos</span>
-                                </div>
+    <main class="ta-center">
+        <section class="container">
+            <h6 class="mb-20">Projeto REPROGRAME-SE</h6>
+            <h1 class="mb-20 gradient">CAPACITAÇÃO EM PROGRAMAÇÃO
+                e desenvolvimento de websites</h1>
+            <p class="mb-20">APRENDA A PROGRAMAR DE FORMA TOTALMENTE GRATUITA EM UM AMBIENTE EAD INTERATIVO.</p>
+            <p class="h3 text-info">CHEGOU A HORA
+                DE REPROGRAMAR O SEU FUTURO!</p>
+        </section>
 
-                                <div class="col d-grid align-items-center">
-                                    <span id="segundos">00</span>
-                                    <span class="tempo">Segundos</span>
-                                </div>
+        <div class="bg-dark mt-3 p-3 bg-reprogramese" data-aos="fade-right">
+            <div class="col-lg-6 col-sm-12 mx-auto">
+                <span id="proximaturma" value="2023-09-15T10:00:00"></span>
+                <div class="relogio d-flex align-items-center row col-sm-12 p-3 my-5">
+                    <p class="row d-grid mb-0 mt-1 titulo-relogio text-uppercase mx-auto">Tempo restante para abertura de nova turma: </p>
+                    <div class="col d-grid align-items-center p-3">
+                        <span id="dias">0</span>
+                        <span class="tempo">Dias</span>
+                    </div>
 
-                            </div>
-                        </div>
+                    <div class="col d-grid align-items-center p-3">
+                        <span id="horas">00</span>
+                        <span class="tempo">Horas</span>
+                    </div>
 
-                        <a href="#preco" class="btn btn-primary btn-outline-info mt-3 text-light">INSCREVA-SE AGORA!</a>
+                    <div class="col d-grid align-items-center p-3">
+                        <span id="minutos">00</span>
+                        <span class="tempo">Minutos</span>
+                    </div>
+
+                    <div class="col d-grid align-items-center p-3">
+                        <span id="segundos">00</span>
+                        <span class="tempo">Segundos</span>
+                    </div>
+
+                </div>
+
+                <a href="#preco" class="col-4 d-grid btn btn-primary btn-outline-info mt-3 text-light mx-auto">INSCREVA-SE AGORA!</a>
+            </div>
+        </div>
+    </main>
+
+
+    <hr class="container text-primary border-5">
+    <section class="mt-2 container" data-aos="fade-up">
+        <p class="display-6 lead text-center">NOTÍCIAS</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="/img/noticia4.jpg" class="d-block w-100" alt="Imagem do Carrossel 1">
+                    <div class="carousel-caption d-none d-md-block p-3">
+                        <h5 class="text-info">Hackathon Reprograme-se!</h5>
+                        <p class="lead">Alunos do curso enfrentam para desenvolver projetos no Hackathon 2023.</p>
+                        <p class="lead">03/03/2023 17:40h</p>
+                        <a href="#" class="btn btn-outline-info">Acompanhe as novidades do Reprograme-se</a>
                     </div>
                 </div>
-        </main>
-
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="/img/noticia2.jpg" class="d-block w-100" alt="Imagem do Carrossel 2">
+                    <div class="carousel-caption d-none d-md-block p-3 col-8">
+                        <h5 class="text-bg-danger">Cuidado com a FAKENEWS!!</h5>
+                        <p class="lead bg-dark">Nova ferramenta do OpenIA é capaz de idêntificar notícias falsa. Acesse o link para saber mais!</p>
+                        <p class="lead">03/03/2023 17:40h</p>
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="/img/BANNER-rep.png" class="d-block w-100" alt="Imagem do Carrossel 3">
+                    <div class="carousel-caption d-none d-md-block p-3">
+                        <h5 class="text-info">Oportunidades de Estágio!</h5>
+                        <p class="lead">Empresas parceiras do programa, estão em busca de jovens talentos para estágio.</p>
+                        <p class="lead">03/03/2023 17:40h</p>
+                        <a href="#" class="btn btn-info">INSCREVA-SE!</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+        </div>
+    </section>
+    <div class="container">
         <section class="sec-sobre mb-30">
             <div class="div-sobre-foto" data-aos="fade-left">
                 <img src="/img/minhafoto.png" alt="Minha foto">
@@ -79,6 +146,7 @@
                     em
                     clientes.</p>
                 <h3>Eu crio sites:</h3>
+            </div>
         </section>
 
         <section class="sec-sobre-itens mb-30">
@@ -208,27 +276,27 @@
             <a href="#"><i class="bi-facebook mx-20 social"></i></a>
             <a href="#"><i class="bi-youtube mx-20 social"></i></a>
         </section>
-    </div>
 
-    <footer class="ta-center" data-aos="fade" data-aos-offset="0">
-        <p>&copy; Georgio Ferri Jr.</p>
-    </footer>
+        <footer class="ta-center" data-aos="fade" data-aos-offset="0">
+            <p>&copy; Georgio Ferri Jr.</p>
+        </footer>
 
-    <script src="/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="/node_modules/aos/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 200,
-            duration: 1200,
-            easing: 'ease-in',
-            delay: 500,
-        });
-        var scroll =
-            new SmoothScroll('a[href*="#"]', {
-                speed: 500
+        <script src="/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="/node_modules/aos/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 200,
+                duration: 1200,
+                easing: 'ease-in',
+                delay: 500,
             });
+            var scroll =
+                new SmoothScroll('a[href*="#"]', {
+                    speed: 500
+                });
 
-    </script>
+        </script>
+    </div>
 </body>
 
 </html>
