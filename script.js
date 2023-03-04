@@ -64,10 +64,10 @@ increaseFontSizeButton.addEventListener('click', () => {
 highContrastModeButton.addEventListener('click', () => {
   document.body.classList.toggle('high-contrast');
   if (document.body.classList.contains('high-contrast')) {
-    highContrastModeButton.textContent = 'Desativar alto contraste';
+    // highContrastModeButton.textContent = 'Desativar alto contraste';
     localStorage.setItem('highContrastMode', true);
   } else {
-    highContrastModeButton.textContent = 'Ativar alto contraste';
+    // highContrastModeButton.textContent = 'Ativar alto contraste';
     localStorage.removeItem('highContrastMode');
   }
 });
