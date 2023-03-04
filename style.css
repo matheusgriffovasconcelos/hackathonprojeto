@@ -69,3 +69,35 @@
     border-radius: 100px;
 }
 
+
+
+
+
+
+
+/* Estilos para dispositivos pequenos */
+@media (max-width: 767px) {
+  /* Reduz a fonte do cabeçalho */
+  h1 {
+    font-size: 24px;
+  }
+  
+  /* Ajusta o tamanho da tabela */
+  table {
+    font-size: 14px;
+  }
+  
+  /* Esconde a coluna de datas */
+  table td:nth-child(1),
+  table th:nth-child(1) {
+    display: none;
+  }
+  
+  /* Ajusta a largura das células de evento e local */
+  table td:nth-child(2),
+  table td:nth-child(3),
+  table th:nth-child(2),
+  table th:nth-child(3) {
+    width: 50%;
+  }
+}

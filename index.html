@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="leiaute.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendario.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+
     <title>Reprograme-se</title>
 </head>
 
@@ -31,328 +33,353 @@
                 <button id="increase-font-size" class="btn btn-lg btn-primary mb-1"><span class="bi bi-plus-circle">Aumentar Letras</span></button>
                 <button id="decrease-font-size" class="btn btn-lg btn-primary mb-1"><span class="bi bi-dash-circle">Diminuir Letras</span></button>
                 <div class="form-check form-switch bg-primary rounded-2 text-light">
-                    <input class="form-check-input" type="checkbox" role="switch" id="high-contrast-mode">Alto Contraste</div>
-                    <!-- <label class="form-check-label btn btn-primary" for="high-contrast-mode"> Alto Contraste</label> -->
+                    <input class="form-check-input" type="checkbox" role="switch" id="high-contrast-mode">Alto Contraste
+                </div>
+                <!-- <label class="form-check-label btn btn-primary" for="high-contrast-mode"> Alto Contraste</label> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="mb-3 mt-0 py-2 container d-flex mx-auto">
+    <i class="logotipo img-fluid"><img src="/img/logo-ifes/ifes-horizontal-cor.png" alt=""></i>
+    <i class="logotipo img-fluid"><img src="/img/logo-reprogramese/preferencial-horizontal.png" alt=""></i>
+    <i class="logotipo img-fluid"><img src="/img/logo-action/horizontal-cor.png" alt=""></i>
+</header>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</div>
+
+<hr class="container text-primary border-5">
+
+
+<main class="ta-center">
+    <section class="container">
+        <h6 class="mb-20">Projeto REPROGRAME-SE</h6>
+        <h1 class="mb-20 gradient">CAPACITAÇÃO EM PROGRAMAÇÃO
+            e desenvolvimento de websites</h1>
+        <p class="mb-20">APRENDA A PROGRAMAR DE FORMA TOTALMENTE GRATUITA EM UM AMBIENTE EAD INTERATIVO.</p>
+        <p class="h3 text-info" data-aos="fade-up">CHEGOU A HORA
+            DE REPROGRAMAR O SEU FUTURO!</p>
+    </section>
+
+    <div class="bg-dark mt-3 p-3 bg-reprogramese" data-aos="fade-right">
+        <div class="col-lg-6 col-sm-12 mx-auto">
+            <span id="proximaturma" value="2023-09-15T10:00:00"></span>
+            <div class="relogio d-flex align-items-center row col-sm-12 p-3 my-5">
+                <p class="row d-grid mb-0 mt-1 titulo-relogio text-uppercase mx-auto">Tempo restante para abertura de nova turma: </p>
+                <div class="col d-grid align-items-center p-3">
+                    <span id="dias">0</span>
+                    <span class="tempo">Dias</span>
+                </div>
+
+                <div class="col d-grid align-items-center p-3">
+                    <span id="horas">00</span>
+                    <span class="tempo">Horas</span>
+                </div>
+
+                <div class="col d-grid align-items-center p-3">
+                    <span id="minutos">00</span>
+                    <span class="tempo">Minutos</span>
+                </div>
+
+                <div class="col d-grid align-items-center p-3">
+                    <span id="segundos">00</span>
+                    <span class="tempo">Segundos</span>
+                </div>
+
+            </div>
+
+            <a href="#preco" class="col-4 d-grid btn btn-primary btn-outline-info mt-3 text-light mx-auto">INSCREVA-SE AGORA!</a>
+        </div>
+    </div>
+</main>
+
+
+<hr class="container text-primary border-5">
+<section class="mt-2 container" data-aos="fade-up">
+    <p class="display-6 lead text-center">NOTÍCIAS</p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner mt-0">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="/img/BANNER-rep.png" class="d-block w-100" alt="Imagem do Carrossel 1">
+                <div class="carousel-caption d-none d-sm-block p-3 col-4 mx-auto">
+                    <a href="#" class="btn btn-info">INSCREVA-SE!</a>
+                    <h5 class="text-info">Oportunidades de Estágio!</h5>
+                    <p class="lead">Empresas parceiras estão contratando!</p>
+                    <p class="lead bg-dark bg-opacity-50">03/03/2023 17:40h</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/noticia2.jpg" class="d-block w-100" alt="Imagem do Carrossel 2">
+                <div class="carousel-caption d-none d-sm-block p-3 col-8 mx-auto">
+                    <h5 class="text-bg-danger">Cuidado com a FAKENEWS!!</h5>
+                    <p class="lead">Nova ferramenta do OpenIA é capaz de idêntificar notícias falsa. Acesse o link para saber mais!</p>
+                    <p class="lead bg-dark bg-opacity-50">03/03/2023 17:40h</p>
+                    <a href="#" class="btn btn-primary">Ler mais</a>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="/img/noticia4.jpg" class="d-block w-100" alt="Imagem do Carrossel 3">
+                <div class="carousel-caption d-none d-sm-block p-3 col-8 mx-auto">
+                    <h5 class="text-info">Hackathon Reprograme-se!</h5>
+                    <p class="lead">Alunos do curso enfrentam para desenvolver projetos no Hackathon 2023.</p>
+                    <p class="lead bg-dark bg-opacity-50">03/03/2023 17:40h</p>
+                    <a href="#" class="btn btn-outline-info">Acompanhe as novidades do Reprograme-se</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+    </div>
+</section>
+
+<hr class="container text-primary border-5">
+<p class="display-6 lead text-center" data-aos="fade-right">Depoimentos de ex-alunos</p>
+<div class="container mt-3">
+    <div class="container mb-5" data-aos="fade-up">
+        <div class="row">
+            <div class="col">
+                <div class="card mt-1">
+                    <img src="/img/minhafoto.png" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fulano de Tal</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus voluptates nobis distinctio quibusdam sequi odio libero porro! Quaerat, recusandae?</p>
+                        <p class="card-subtitle text-muted">Data: 03/03/2023</p>
+                        <!-- <a href="#" class="btn btn-primary">Ler mais</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-1">
+                    <img src="/img/minhafoto.png" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fulano de Tal</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus voluptates nobis distinctio quibusdam sequi odio libero porro! Quaerat, recusandae?</p>
+                        <p class="card-subtitle text-muted">Data: 03/03/2023</p>
+                        <!-- <a href="#" class="btn btn-primary">Ler mais</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-1">
+                    <img src="/img/minhafoto.png" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fulano de Tal</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo, quidem modi adipisci necessitatibus maiores sit. Illo facilis doloribus laborum?</p>
+                        <p class="card-subtitle text-muted">Data: 03/03/2023</p>
+                        <!-- <a href="#" class="btn btn-primary">Ler mais</a> -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <header class="mb-3 mt-0 py-2 container d-flex mx-auto">
-        <i class="logotipo img-fluid"><img src="/img/logo-ifes/ifes-horizontal-cor.png" alt=""></i>
-        <i class="logotipo img-fluid"><img src="/img/logo-reprogramese/preferencial-horizontal.png" alt=""></i>
-        <i class="logotipo img-fluid"><img src="/img/logo-action/horizontal-cor.png" alt=""></i>
-    </header>
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
+    <div class="container">
+        <h1 class="text-center mb-5">Agenda de Eventos</h1>
+      
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Evento</th>
+              <th>Local</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Linhas da tabela serão adicionadas usando JavaScript -->
+          </tbody>
+        </table>
       </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-    </div>
+      
 
-    <hr class="container text-primary border-5">
-   
 
-    <main class="ta-center">
-        <section class="container">
-            <h6 class="mb-20">Projeto REPROGRAME-SE</h6>
-            <h1 class="mb-20 gradient">CAPACITAÇÃO EM PROGRAMAÇÃO
-                e desenvolvimento de websites</h1>
-            <p class="mb-20">APRENDA A PROGRAMAR DE FORMA TOTALMENTE GRATUITA EM UM AMBIENTE EAD INTERATIVO.</p>
-            <p class="h3 text-info" data-aos="fade-up">CHEGOU A HORA
-                DE REPROGRAMAR O SEU FUTURO!</p>
-        </section>
 
-        <div class="bg-dark mt-3 p-3 bg-reprogramese" data-aos="fade-right">
-            <div class="col-lg-6 col-sm-12 mx-auto">
-                <span id="proximaturma" value="2023-09-15T10:00:00"></span>
-                <div class="relogio d-flex align-items-center row col-sm-12 p-3 my-5">
-                    <p class="row d-grid mb-0 mt-1 titulo-relogio text-uppercase mx-auto">Tempo restante para abertura de nova turma: </p>
-                    <div class="col d-grid align-items-center p-3">
-                        <span id="dias">0</span>
-                        <span class="tempo">Dias</span>
-                    </div>
 
-                    <div class="col d-grid align-items-center p-3">
-                        <span id="horas">00</span>
-                        <span class="tempo">Horas</span>
-                    </div>
-
-                    <div class="col d-grid align-items-center p-3">
-                        <span id="minutos">00</span>
-                        <span class="tempo">Minutos</span>
-                    </div>
-
-                    <div class="col d-grid align-items-center p-3">
-                        <span id="segundos">00</span>
-                        <span class="tempo">Segundos</span>
-                    </div>
-
-                </div>
-
-                <a href="#preco" class="col-4 d-grid btn btn-primary btn-outline-info mt-3 text-light mx-auto">INSCREVA-SE AGORA!</a>
-            </div>
+    <section class="sec-sobre-itens mb-30">
+        <div class="item-sobre" data-aos="fade-left">
+            <i class="bi-tools mb-10"></i>
+            <h5 class="mb-10">Profissionais</h5>
+            <p>Design minimalista com estilo e excelente usabilidade.</p>
         </div>
-    </main>
-
-
-    <hr class="container text-primary border-5">
-    <section class="mt-2 container" data-aos="fade-up">
-        <p class="display-6 lead text-center">NOTÍCIAS</p>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner mt-0">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="/img/BANNER-rep.png" class="d-block w-100" alt="Imagem do Carrossel 1">
-                    <div class="carousel-caption d-none d-sm-block p-3 col-4 mx-auto">
-                        <a href="#" class="btn btn-info">INSCREVA-SE!</a>
-                        <h5 class="text-info">Oportunidades de Estágio!</h5>
-                        <p class="lead">Empresas parceiras estão contratando!</p>
-                        <p class="lead bg-dark bg-opacity-50">03/03/2023 17:40h</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="/img/noticia2.jpg" class="d-block w-100" alt="Imagem do Carrossel 2">
-                    <div class="carousel-caption d-none d-sm-block p-3 col-8 mx-auto">
-                        <h5 class="text-bg-danger">Cuidado com a FAKENEWS!!</h5>
-                        <p class="lead">Nova ferramenta do OpenIA é capaz de idêntificar notícias falsa. Acesse o link para saber mais!</p>
-                        <p class="lead bg-dark bg-opacity-50">03/03/2023 17:40h</p>
-                        <a href="#" class="btn btn-primary">Ler mais</a>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="/img/noticia4.jpg" class="d-block w-100" alt="Imagem do Carrossel 3">
-                    <div class="carousel-caption d-none d-sm-block p-3 col-8 mx-auto">
-                        <h5 class="text-info">Hackathon Reprograme-se!</h5>
-                        <p class="lead">Alunos do curso enfrentam para desenvolver projetos no Hackathon 2023.</p>
-                        <p class="lead bg-dark bg-opacity-50">03/03/2023 17:40h</p>
-                        <a href="#" class="btn btn-outline-info">Acompanhe as novidades do Reprograme-se</a>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="item-sobre" data-aos="fade-left">
+            <i class="bi-exclamation-lg mb-10"></i>
+            <h5 class="mb-10">Chamativos</h5>
+            <p>Aumentam o tráfego e conduzem os visitantes a consumir.</p>
         </div>
+        <div class="item-sobre" data-aos="fade-left">
+            <i class="bi-box-arrow-down-left mb-10"></i>
+            <h5 class="mb-10">Responsivos</h5>
+            <p>Funcionam perfeitamente em qualquer resolução de tela.</p>
         </div>
+        <div class="item-sobre" data-aos="fade-left">
+            <i class="bi-gear mb-10"></i>
+            <h5 class="mb-10">Customizáveis</h5>
+            <p>Você pode personalizar cores e fotos em questão de minutos.</p>
+        </div>
+        <div class="item-sobre" data-aos="fade-left">
+            <i class="bi-lightning-fill mb-10"></i>
+            <h5 class="mb-10">Rápidos</h5>
+            <p>Cada linha de código escrita foi pensada para maximizar a performance de carregamento.</p>
+        </div>
+        <div class="item-sobre" data-aos="fade-left">
+            <i class="bi-hdd-network mb-10"></i>
+            <h5 class="mb-10">Disponíveis</h5>
+            <p>Hospedados em infraestrutura escalável para atenderem a qualquer fluxo de demanda.</p>
         </div>
     </section>
 
-    <hr class="container text-primary border-5">
-    <p class="display-6 lead text-center" data-aos="fade-right">Depoimentos de ex-alunos</p>
-    <div class="container mt-3">
-        <div class="container mb-5" data-aos="fade-up">
-            <div class="row">
-              <div class="col">
-                <div class="card mt-1">
-                  <img src="/img/minhafoto.png" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Fulano de Tal</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus voluptates nobis distinctio quibusdam sequi odio libero porro! Quaerat, recusandae?</p>
-                    <p class="card-subtitle text-muted">Data: 03/03/2023</p>
-                    <!-- <a href="#" class="btn btn-primary">Ler mais</a> -->
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card mt-1">
-                  <img src="/img/minhafoto.png" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Fulano de Tal</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores possimus voluptates nobis distinctio quibusdam sequi odio libero porro! Quaerat, recusandae?</p>
-                    <p class="card-subtitle text-muted">Data: 03/03/2023</p>
-                    <!-- <a href="#" class="btn btn-primary">Ler mais</a> -->
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card mt-1">
-                  <img src="/img/minhafoto.png" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Fulano de Tal</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo, quidem modi adipisci necessitatibus maiores sit. Illo facilis doloribus laborum?</p>
-                    <p class="card-subtitle text-muted">Data: 03/03/2023</p>
-                    <!-- <a href="#" class="btn btn-primary">Ler mais</a> -->
-                  </div>
-                </div>
-              </div>
+    <section class="sec-projetos mb-30">
+        <h2 data-aos="fade-up">Últimos projetos</h2>
+        <div class="item-projeto" data-aos="fade-right">
+            <img src="/img/projeto1.png" alt="Projeto 01" class="mb-10">
+            <h5 class="mb-10">Projeto 1</h5>
+            <p class="mb-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime omnis dicta officia corporis
+                provident eligendi ut dolor voluptas tempore soluta, eius perferendis, quibusdam, aspernatur
+                voluptates? Minus!
+            </p>
+            <a href="#"><i class="bi-link"></i> Visitar site</a>
+        </div>
+        <div class="item-projeto" data-aos="fade-left">
+            <img src="/img/projeto2.png" alt="Projeto 02" class="mb-10">
+            <h5 class="mb-10">Projeto 2</h5>
+            <p class="mb-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime omnis dicta officia corporis
+                provident eligendi ut dolor voluptas tempore soluta, eius perferendis, quibusdam, aspernatur
+                voluptates? Minus!
+            </p>
+            <a href="#"><i class="bi-link"></i> Visitar site</a>
+        </div>
+    </section>
+
+    <section class="sec-expectativa mb-30">
+        <h2 class="mb-10" data-aos="fade-up">O que esperar</h2>
+        <p class="mb-10" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
+            culpa delectus
+            sapiente libero perferendis amet? Deleniti, eius rem. Voluptas sequi voluptatibus exercitationem!</p>
+        <div class="div-itens-expectativa">
+            <div class="item-expectativa" data-aos="fade-right">
+                <i class="bi-megaphone mb-15">
+                </i>
+                <h5 class="mb-10">Boa comunicação</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem consequatur optio aperiam?</p>
+            </div>
+            <div class="item-expectativa" data-aos="fade-up">
+                <i class="bi-calendar-check mb-15"></i>
+                <h5 class="mb-10">Entrega no prazo</h5>
+                <p>Voluptate ipsam a sed animi ad ea perspiciatis blanditiis temporibus obcaecati quae!</p>
+            </div>
+            <div class="item-expectativa" data-aos="fade-left">
+                <i class="bi-palette mb-15"></i>
+                <h5 class="mb-10">Design espetacular</h5>
+                <p>Aut eligendi quo ducimus nesciunt nihil repudiandae similique alias, quis error autem.</p>
             </div>
         </div>
-                
-                   
-          
+    </section>
 
-
-
-
-
-
-
-
-        <section class="sec-sobre-itens mb-30">
-            <div class="item-sobre" data-aos="fade-left">
-                <i class="bi-tools mb-10"></i>
-                <h5 class="mb-10">Profissionais</h5>
-                <p>Design minimalista com estilo e excelente usabilidade.</p>
+    <section class="sec-precos mb-30" id="preco">
+        <h2 class="mb-15" data-aos="fade-up">Preços</h2>
+        <p class="mb-20" data-aos="fade-up">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit molestias qui veritatis molestiae soluta
+            dignissimos nesciunt? Adipisci totam maxime similique voluptates rerum ab illum animi at voluptate!
+            Commodi tempore saepe nesciunt. Culpa, officia modi esse facilis itaque nihil hic voluptas illum unde!
+        </p>
+        <div class="div-precos">
+            <div class="div-texto" data-aos="fade-up">
+                <h6 class="ta-left mb-10">A partir de</h6>
+                <h2 class="mb-10">R$ 800,00</h2>
+                <p class="mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse consequuntur
+                    nulla sunt ratione laborum.</p>
+                <ul>
+                    <li class="mb-10">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa itaque praesentium expedita?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam blanditiis quo dolores.
+                    </li>
+                </ul>
             </div>
-            <div class="item-sobre" data-aos="fade-left">
-                <i class="bi-exclamation-lg mb-10"></i>
-                <h5 class="mb-10">Chamativos</h5>
-                <p>Aumentam o tráfego e conduzem os visitantes a consumir.</p>
-            </div>
-            <div class="item-sobre" data-aos="fade-left">
-                <i class="bi-box-arrow-down-left mb-10"></i>
-                <h5 class="mb-10">Responsivos</h5>
-                <p>Funcionam perfeitamente em qualquer resolução de tela.</p>
-            </div>
-            <div class="item-sobre" data-aos="fade-left">
-                <i class="bi-gear mb-10"></i>
-                <h5 class="mb-10">Customizáveis</h5>
-                <p>Você pode personalizar cores e fotos em questão de minutos.</p>
-            </div>
-            <div class="item-sobre" data-aos="fade-left">
-                <i class="bi-lightning-fill mb-10"></i>
-                <h5 class="mb-10">Rápidos</h5>
-                <p>Cada linha de código escrita foi pensada para maximizar a performance de carregamento.</p>
-            </div>
-            <div class="item-sobre" data-aos="fade-left">
-                <i class="bi-hdd-network mb-10"></i>
-                <h5 class="mb-10">Disponíveis</h5>
-                <p>Hospedados em infraestrutura escalável para atenderem a qualquer fluxo de demanda.</p>
-            </div>
-        </section>
-
-        <section class="sec-projetos mb-30">
-            <h2 data-aos="fade-up">Últimos projetos</h2>
-            <div class="item-projeto" data-aos="fade-right">
-                <img src="/img/projeto1.png" alt="Projeto 01" class="mb-10">
-                <h5 class="mb-10">Projeto 1</h5>
-                <p class="mb-10">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime omnis dicta officia corporis
-                    provident eligendi ut dolor voluptas tempore soluta, eius perferendis, quibusdam, aspernatur
-                    voluptates? Minus!
-                </p>
-                <a href="#"><i class="bi-link"></i> Visitar site</a>
-            </div>
-            <div class="item-projeto" data-aos="fade-left">
-                <img src="/img/projeto2.png" alt="Projeto 02" class="mb-10">
-                <h5 class="mb-10">Projeto 2</h5>
-                <p class="mb-10">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime omnis dicta officia corporis
-                    provident eligendi ut dolor voluptas tempore soluta, eius perferendis, quibusdam, aspernatur
-                    voluptates? Minus!
-                </p>
-                <a href="#"><i class="bi-link"></i> Visitar site</a>
-            </div>
-        </section>
-
-        <section class="sec-expectativa mb-30">
-            <h2 class="mb-10" data-aos="fade-up">O que esperar</h2>
-            <p class="mb-10" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-                culpa delectus
-                sapiente libero perferendis amet? Deleniti, eius rem. Voluptas sequi voluptatibus exercitationem!</p>
-            <div class="div-itens-expectativa">
-                <div class="item-expectativa" data-aos="fade-right">
-                    <i class="bi-megaphone mb-15">
-                    </i>
-                    <h5 class="mb-10">Boa comunicação</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem consequatur optio aperiam?</p>
-                </div>
-                <div class="item-expectativa" data-aos="fade-up">
-                    <i class="bi-calendar-check mb-15"></i>
-                    <h5 class="mb-10">Entrega no prazo</h5>
-                    <p>Voluptate ipsam a sed animi ad ea perspiciatis blanditiis temporibus obcaecati quae!</p>
-                </div>
-                <div class="item-expectativa" data-aos="fade-left">
-                    <i class="bi-palette mb-15"></i>
-                    <h5 class="mb-10">Design espetacular</h5>
-                    <p>Aut eligendi quo ducimus nesciunt nihil repudiandae similique alias, quis error autem.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="sec-precos mb-30" id="preco">
-            <h2 class="mb-15" data-aos="fade-up">Preços</h2>
-            <p class="mb-20" data-aos="fade-up">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit molestias qui veritatis molestiae soluta
-                dignissimos nesciunt? Adipisci totam maxime similique voluptates rerum ab illum animi at voluptate!
-                Commodi tempore saepe nesciunt. Culpa, officia modi esse facilis itaque nihil hic voluptas illum unde!
-            </p>
-            <div class="div-precos">
-                <div class="div-texto" data-aos="fade-up">
-                    <h6 class="ta-left mb-10">A partir de</h6>
-                    <h2 class="mb-10">R$ 800,00</h2>
-                    <p class="mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, esse consequuntur
-                        nulla sunt ratione laborum.</p>
-                    <ul>
-                        <li class="mb-10">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa itaque praesentium expedita?
-                        </li>
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam blanditiis quo dolores.
-                        </li>
-                    </ul>
-                </div>
-                <form class="mt-30" data-aos="fade-up">
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="Email">
-                    <textarea placeholder="Descreva sua ideia..."></textarea>
-                    <button class="btn-solido">Enviar</button>
-                </form>
-            </div>
-        </section>
-
-        <section class="sec-assinar ta-center mb-30" data-aos="fade-up">
-            <h2 class="mb-15">Assinar nossa newsletter</h2>
-            <p class="mb-15">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsa dolorum quas molestias eum? Vitae
-                culpa similique blanditiis vero quidem consequuntur autem quibusdam minima enim.
-            </p>
-            <form class="mb-20">
-                <input type="email" placeholder="E-mail" class="mb-20"><br>
-                <button class="btn-solido">Assinar</button>
+            <form class="mt-30" data-aos="fade-up">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Descreva sua ideia..."></textarea>
+                <button class="btn-solido">Enviar</button>
             </form>
-            <a href="#"><i class="bi-instagram mx-20 social"></i></a>
-            <a href="#"><i class="bi-facebook mx-20 social"></i></a>
-            <a href="#"><i class="bi-youtube mx-20 social"></i></a>
-        </section>
+        </div>
+    </section>
 
-    </div>
-    <footer class="ta-center" data-aos="fade" data-aos-offset="0">
-        <p>&copy; Georgio Ferri Jr.</p>
-    </footer>
+    <section class="sec-assinar ta-center mb-30" data-aos="fade-up">
+        <h2 class="mb-15">Inscreva-se na nossa Newsletter e fique por dentro das novidades!</h2>
+        <p class="mb-15 text-start">
+            Ao assinar gratuitamente, você receberá em seu e-mail uma variedade de dicas e conteúdo relacionados a tecnologia e programação, tudo completamente grátis e acessível para todos. <br>
+
+            Queremos que você aproveite ao máximo a nossa plataforma e tenha acesso aos nossos conteúdos exclusivos. Para isso, estamos oferecendo a oportunidade de se inscrever em nossa newsletter e receber informações sobre novos cursos diretamente em sua caixa de entrada. <br>
+
+            Ao assinar nossa newsletter, você terá acesso a: <br>
+
+
+            - Informações sobre novos cursos lançados na plataforma <br>
+            - Dicas exclusivas sobre como aproveitar ao máximo nossos cursos <br>
+            - Conteúdo extra sobre os temas abordados nos cursos <br>
+            - E muito mais! <br>
+
+            Não perca mais tempo e inscreva-se agora mesmo. É rápido, fácil e totalmente gratuito. Basta preencher o formulário abaixo e começar a receber nossos cursos diretamente em sua caixa de entrada. Junte-se a nossa comunidade de estudantes e aproveite ao máximo nossos cursos gratuitos! <br>
+        </p>
+        <form class="mb-20">
+            <input type="email" placeholder="E-mail" class="mb-20"><br>
+            <button class="btn-solido">Assinar</button>
+        </form>
+        <a href="#"><i class="bi-instagram mx-20 social"></i></a>
+        <a href="#"><i class="bi-facebook mx-20 social"></i></a>
+        <a href="#"><i class="bi-youtube mx-20 social"></i></a>
+    </section>
+
+</div>
+<footer class="ta-center" data-aos="fade" data-aos-offset="0">
+    <p>&copy; Georgio Ferri Jr.</p>
+</footer>
+
 </body>
 
 </html>
 
 
 <script src="/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-        <script src="/node_modules/aos/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                offset: 200,
-                duration: 1200,
-                easing: 'ease-in',
-                delay: 500,
-            });
-            var scroll =
-                new SmoothScroll('a[href*="#"]', {
-                    speed: 500
-                });
+<script src="/node_modules/aos/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 1200,
+        easing: 'ease-in',
+        delay: 500,
+    });
+    var scroll =
+        new SmoothScroll('a[href*="#"]', {
+            speed: 500
+        });
 
-        </script>
+</script>
