@@ -20,26 +20,44 @@
 </head>
 
 
-<body>
+<div>
+
+    <div class="col-1 d-flex sticky-top">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle-split" type="button" id="accessibility-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/img/icon-acess2.png" alt="" width="30px">
+            </button>
+            <div class="dropdown-menu p-3" aria-labelledby="accessibility-dropdown">
+                <button id="increase-font-size" class="btn btn-lg btn-primary mb-1"><span class="bi bi-plus-circle">Aumentar Letras</span></button>
+                <button id="decrease-font-size" class="btn btn-lg btn-primary mb-1"><span class="bi bi-dash-circle">Diminuir Letras</span></button>
+                <div class="form-check form-switch bg-primary rounded-2 text-light">
+                    <input class="form-check-input" type="checkbox" role="switch" id="high-contrast-mode">Alto Contraste</div>
+                    <!-- <label class="form-check-label btn btn-primary" for="high-contrast-mode"> Alto Contraste</label> -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="mb-3 mt-0 py-2 container d-flex mx-auto">
         <i class="logotipo img-fluid"><img src="/img/logo-ifes/ifes-horizontal-cor.png" alt=""></i>
         <i class="logotipo img-fluid"><img src="/img/logo-reprogramese/preferencial-horizontal.png" alt=""></i>
         <i class="logotipo img-fluid"><img src="/img/logo-action/horizontal-cor.png" alt=""></i>
     </header>
-    <hr class="container text-primary border-5">
-    <div class="col-1 d-flex align-content-end sticky-top">
-        <div class="dropdown">
-            <button class="btn dropdown-toggle-split" type="button" id="accessibility-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="/img/libras.png" alt="" width="50px">
-            </button>
-            <div class="dropdown-menu p-3" aria-labelledby="accessibility-dropdown">
-                <button id="increase-font-size" class="btn btn-lg btn-primary mb-1"><span class="bi bi-plus-circle">Aumentar Letras</span></button>
-                <button id="decrease-font-size" class="btn btn-lg btn-primary mb-1"><span class="bi bi-dash-circle">Diminuir Letras</span></button>
-                <button id="high-contrast-mode" class=" btn btn-lg btn-dark"><span class="bi bi-palette-fill">Alto Contraste</span></button>
-            </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
         </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
     </div>
+
+    <hr class="container text-primary border-5">
+   
 
     <main class="ta-center">
         <section class="container">
@@ -93,32 +111,31 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner mt-0">
                 <div class="carousel-item active" data-bs-interval="3000">
                     <img src="/img/BANNER-rep.png" class="d-block w-100" alt="Imagem do Carrossel 1">
-                    <div class="carousel-caption d-none d-md-block p-3 col-8">
-                        
-                        <h5 class="text-info">Oportunidades de Estágio!</h5>
-                        <p class="lead">Empresas parceiras do programa, estão em busca de jovens talentos para estágio.</p>
-                        <p class="lead">03/03/2023 17:40h</p>
+                    <div class="carousel-caption d-none d-sm-block p-3 col-4 mx-auto">
                         <a href="#" class="btn btn-info">INSCREVA-SE!</a>
+                        <h5 class="text-info">Oportunidades de Estágio!</h5>
+                        <p class="lead">Empresas parceiras estão contratando!</p>
+                        <p class="lead bg-dark bg-opacity-50">03/03/2023 17:40h</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
                     <img src="/img/noticia2.jpg" class="d-block w-100" alt="Imagem do Carrossel 2">
-                    <div class="carousel-caption d-none d-md-block p-3 col-8">
+                    <div class="carousel-caption d-none d-sm-block p-3 col-8 mx-auto">
                         <h5 class="text-bg-danger">Cuidado com a FAKENEWS!!</h5>
-                        <p class="lead bg-dark">Nova ferramenta do OpenIA é capaz de idêntificar notícias falsa. Acesse o link para saber mais!</p>
-                        <p class="lead">03/03/2023 17:40h</p>
+                        <p class="lead">Nova ferramenta do OpenIA é capaz de idêntificar notícias falsa. Acesse o link para saber mais!</p>
+                        <p class="lead bg-dark bg-opacity-50">03/03/2023 17:40h</p>
                         <a href="#" class="btn btn-primary">Ler mais</a>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
                     <img src="/img/noticia4.jpg" class="d-block w-100" alt="Imagem do Carrossel 3">
-                    <div class="carousel-caption d-none d-md-block p-3 col-8">
+                    <div class="carousel-caption d-none d-sm-block p-3 col-8 mx-auto">
                         <h5 class="text-info">Hackathon Reprograme-se!</h5>
                         <p class="lead">Alunos do curso enfrentam para desenvolver projetos no Hackathon 2023.</p>
-                        <p class="lead">03/03/2023 17:40h</p>
+                        <p class="lead bg-dark bg-opacity-50">03/03/2023 17:40h</p>
                         <a href="#" class="btn btn-outline-info">Acompanhe as novidades do Reprograme-se</a>
                     </div>
                 </div>
@@ -142,7 +159,7 @@
         <div class="container mb-5" data-aos="fade-up">
             <div class="row">
               <div class="col">
-                <div class="card">
+                <div class="card mt-1">
                   <img src="/img/minhafoto.png" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
                   <div class="card-body">
                     <h5 class="card-title text-center">Fulano de Tal</h5>
@@ -153,7 +170,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card">
+                <div class="card mt-1">
                   <img src="/img/minhafoto.png" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
                   <div class="card-body">
                     <h5 class="card-title text-center">Fulano de Tal</h5>
@@ -164,7 +181,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="card">
+                <div class="card mt-1">
                   <img src="/img/minhafoto.png" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
                   <div class="card-body">
                     <h5 class="card-title text-center">Fulano de Tal</h5>
